@@ -4,7 +4,7 @@ StockHive: Smart Predictions for Busy Traders
 
 This main.py file contains code for training an LSTM model to predict stock prices and making predictions for the next day. The code uses historical stock data from Yahoo Finance and implements the model using TensorFlow and Keras libraries.
 
-Prerequisites
+#Prerequisites
 Before running the code, make sure you have the following libraries installed:
 
 numpy
@@ -16,9 +16,11 @@ scikit-learn
 TensorFlow
 You can install the required libraries using pip:
 
-Copy code
+#Copy code
 pip install numpy matplotlib pandas pandas_datareader scikit-learn tensorflow
-Usage
+
+
+#Usage
 Set the company symbol and date range:
 
 Modify the company variable to the desired stock symbol (e.g., 'FB' for Facebook).
@@ -31,7 +33,9 @@ The code will perform the following steps:
 Fetch historical stock data:
 
 The code retrieves the historical stock data for the specified company and date range from Yahoo Finance using the pandas_datareader library.
-Prepare the data:
+
+
+#Prepare the data:
 
 The stock data is normalized using the MinMaxScaler from scikit-learn, which scales the data to a range of 0 to 1.
 The normalized data is then split into input-output pairs, where each input consists of a sequence of "prediction_days" stock prices used to predict the next price.
